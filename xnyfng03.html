@@ -1,0 +1,276 @@
+<style>
+html {
+  scroll-behavior: smooth;
+  transition-duration: 1.0s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.page-wrapper {
+  background-color: white;
+  max-width: 90rem;
+  min-height: 250vh;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+h1 {
+  font-family: "Poppins", san-serif;
+  font-weight: 450;
+  font-size: 28;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+h2 {
+  display: flex;
+  padding-top: 130px;
+  padding-left: 320px;
+  padding-right: 300px;
+  font-family: "Poppins", san-serif;
+  font-weight: 450;
+  font-size: 30;
+  text-align: left;
+  text-decoration: none;
+}
+
+h3 {
+  display: flex;
+  margin-bottom: 60px;
+  padding-left: 320px;
+  padding-right: 250px;
+  font-family: "Poppins", san-serif;
+  font-weight: 450;
+  font-size: 30;
+  text-align: left;
+  color: cornflowerblue;
+}
+
+h3 a:hover {
+  color: pink;
+}
+
+a {
+  display: flex;
+  flex-flow: column;
+}
+
+</style>
+</head>
+
+
+
+<div class="page-wrapper">
+  <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Title -->
+    <h1><a href="../xnyfng.test03/xnyfng.about.html">FANG</a></h1>
+    <h2>
+      Hello! I'm Xin Yi, Malaysia/Chicago-based graphic designer.
+      <br>
+      For inquiries and collaborations,
+    </h2>
+    <h3>
+      <a href="mailto:xfang5@saic.edu">contact me here :)</a>
+    </h3>
+
+<style>
+  .menu {
+    font-family: 'Poppins', san-serif;
+    font-size: 22px;
+    padding-top: 60px;
+  }
+
+  .checkbox,
+  .hamburger {
+    position: fixed;
+    top: 45px; left: 1310px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .checkbox {
+    opacity: 0;
+    cursor: pointer;
+    z-index: 22;
+  }
+  .hamburger {
+    background: black;
+    padding: 10px;
+    z-index: 11;
+  }
+  .hamburger .wrapper {
+    /* background: thistle; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+
+</style>
+
+
+<input class="checkbox" type="checkbox" />
+<div class="hamburger">
+  <div class="wrapper">
+  </div>
+</div>
+
+<style>
+  .menu {
+    background: snow;
+    position: fixed;
+    top: 0; bottom: 0;
+    right: -300px;
+    width: 270px;
+    transition: 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 11;
+  }
+  .menu a {
+    color: transparent;
+    text-decoration: none;
+    width: 210px;
+    padding:2px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .menu a:hover {
+    font-style: italic;
+  }
+  .menu a:first-child {
+    margin-top: 90px;
+  }
+
+  .checkbox:checked ~ .menu {
+    background-color: black;
+    right: 0px;
+  }
+
+  .checkbox:checked ~ .menu a {
+    color: white;
+  }
+
+</style>
+
+<div class="menu">
+  <a href="../xnyfng.test03/xnyfng.design.html">Design</a>
+  <a href="../xnyfng.test03/xnyfng.rabbithole.html">RabbitHole</a>
+  <a href="../xnyfng.test03/xnyfng.contact.html">Contact</a>
+  <a href="../xnyfng.test03/xnyfng03.html">(Home)</a>
+</div>
+
+
+<style>
+img {
+  box-shadow: 1px 1px 2px 0 rgb(218,218,218); /* h-offset v-offset blur spread color */
+}
+
+
+.gallery {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 10rem;
+}
+.gallery figure {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  padding-top: 1rem;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+}
+.gallery a {
+  color: transparent;
+  text-decoration: none;
+
+  position: absolute;
+  top: 1rem; right: 1rem; bottom: 1rem; left: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", san-serif;
+
+  transition: 0.5s ease-in-out;
+  padding: 0 1rem; /* top/botom ; left/right; */
+}
+.gallery a:hover {
+  background-color: lightsteelblue;
+  color: white;
+  opacity: 90%;
+}
+
+/* Large Screen */
+@media (min-width: 576px) {
+  /*
+  =flex container */
+  .gallery {
+    flex-flow: row wrap;
+  }
+  .gallery figure {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery figure {
+    flex: 0 0 50%;
+  }
+}
+
+
+
+</style>
+
+
+<div class="page-wrapper">
+<div class="gallery">
+  <figure>
+    <img src="design/AlbumCover.jpg" alt="">
+    <figcaption><a href="#">Album Cover Design</a></figcaption>
+  </figure>
+  <figure>
+    <img src="design/M02.jpg" alt="">
+    <figcaption><a href="../xnyfng.test03/xnyfng.designpage.html">Logo Design</a></figcaption>
+  </figure>
+  <figure>
+    <img src="design/CTMP1.jpg" alt="" />
+    <figcaption><a href="#">Packaging Design</a></figcaption>
+  </figure>
+  <figure>
+    <img src="design/wigglesidechair.jpg" alt="">
+    <figcaption><a href="#">Poster Design</a></figcaption>
+  </figure>
+  <figure>
+    <img src="design/typespeakposter.png" alt="">
+    <figcaption><a href="#">Poster Design</a></figcaption>
+  </figure>
+  <figure>
+    <img src="design/architectureposter.png" alt="">
+    <figcaption><a href="#">Image caption appears here.</a></figcaption>
+  </figure>
+</div>
+
+
+<script>
+if (history.scrollRestoration) {
+history.scrollRestoration = 'manual';
+} else {
+window.onbeforeunload =function () {
+window.scrollTo(0, 0);
+}
+}
+</script>

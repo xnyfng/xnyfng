@@ -1,0 +1,232 @@
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.page-wrapper {
+  background-color: white;
+  max-width: 90rem;
+  min-height: 250vh;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+h1 {
+  font-family: "Poppins", san-serif;
+  font-weight: 450;
+  font-size: 28;
+  padding-left: 20px;
+}
+
+h2 {
+  display: flex;
+  padding-top: 130px;
+  padding-left: 65px;
+  padding-right: 250px;
+  font-family: "Poppins", san-serif;
+  font-weight: 500;
+  font-size: 28;
+  text-align: left;
+  text-decoration: none;
+}
+
+h3 {
+  display: flex;
+  position: absolute;
+  padding-top: 130px;
+  padding-left: 65px;
+  padding-right: 250px;
+  font-family: "Poppins", san-serif;
+  font-weight: 450;
+  font-size: 14;
+  text-align: left;
+  text-decoration: none;
+  z-index: 22;
+}
+
+p{
+  display: flex;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 65px;
+  padding-right: 250px;
+  font-family: "Poppins", san-serif;
+  font-style:italic;
+  font-weight: 400;
+  font-size: 10;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+</style>
+
+<div class="page-wrapper">
+  <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Title -->
+    <h1><a href="../xnyfng.test03/xnyfng.about.html">FANG</a></h1>
+    <h2>RABBIT HOLE</h2>
+    <h3>Analog Photography</h3>
+  </header>
+
+  <p>"a metaphor for something that transports someone into a wonderfully surreal state or situation."</p>
+
+
+  <style>
+  /* .f-container img {
+    display: flex;
+    max-width: 50px;
+    margin-top: 10px;
+  } */
+
+  img {
+    box-shadow: 1px 1px 2px 0 rgb(218,218,218); /* h-offset v-offset blur spread color */
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10rem;
+  }
+  .gallery figure {
+    position: relative;
+    margin: 0;
+    padding: 0.6rem;
+  }
+  .gallery img {
+    display: block;
+    width: 100%;
+  }
+  .gallery a {
+    color: transparent;
+    text-decoration: none;
+
+    position: absolute;
+    top: 1rem; right: 1rem; bottom: 1rem; left: 1rem;
+  }
+
+  /* Large Screen */
+  @media (min-width: 400px) {
+    /*
+    =flex container */
+    .gallery {
+      flex-flow: row wrap;
+    }
+    .gallery figure {
+      flex: 0 0 55%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .gallery figure {
+      flex: 0 0 50%;
+    }
+  }
+  </style>
+
+  <div class="gallery">
+    <figure>
+      <img src="film photos/_14_0253.jpg" alt="">
+    </figure>
+    <figure>
+      <img src="film photos/_17_0250.jpg" alt="">
+    </figure>
+    <figure>
+      <img src="film photos/_18_0249.jpg" alt="">
+    </figure>
+    <figure>
+      <img src="film photos/_15_0252.jpg" alt="">
+    </figure>
+
+
+    <style>
+      .menu {
+        font-family: 'Poppins', san-serif;
+        font-size: 22px;
+        padding-top: 60px;
+      }
+
+      .checkbox,
+      .hamburger {
+        position: fixed;
+        top: 45px; left: 1310px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+      }
+      .checkbox {
+        opacity: 0;
+        cursor: pointer;
+        z-index: 22;
+      }
+      .hamburger {
+        background: black;
+        padding: 10px;
+        z-index: 11;
+      }
+      .hamburger .wrapper {
+        /* background: thistle; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: 0.5s ease;
+      }
+
+    </style>
+
+
+    <input class="checkbox" type="checkbox" />
+    <div class="hamburger">
+      <div class="wrapper">
+      </div>
+    </div>
+
+    <style>
+      .menu {
+        background: snow;
+        position: fixed;
+        top: 0; bottom: 0;
+        right: -300px;
+        width: 270px;
+        transition: 0.5s ease;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 11;
+      }
+      .menu a {
+        color: transparent;
+        text-decoration: none;
+        width: 210px;
+        padding: 2px 0;
+        transition: 0.5s ease-in-out;
+      }
+      .menu a:hover {
+        font-style: italic;
+      }
+      .menu a:first-child {
+        margin-top: 90px;
+      }
+
+      .checkbox:checked ~ .menu {
+        background-color: black;
+        right: 0px;
+      }
+
+      .checkbox:checked ~ .menu a {
+        color: white;
+      }
+    </style>
+
+    <div class="menu">
+      <a href="../xnyfng.test03/xnyfng.design.html">Design</a>
+      <a href="../xnyfng.test03/xnyfng.rabbithole.html">RabbitHole</a>
+      <a href="../xnyfng.test03/xnyfng.contact.html">Contact</a>
+      <a href="../xnyfng.test03/xnyfng03.html">(Home)</a>
+    </div>
